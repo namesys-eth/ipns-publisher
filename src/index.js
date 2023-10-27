@@ -16,7 +16,7 @@ log.debug = debug('ipns-pub-debug')
  */
 async function main () {
   log('ℹ️ Enable verbose logging with DEBUG=ipns-pub-debug*')
-  const endpoint = process.env.ENDPOINT || 'wss://api.web3.storage'
+  const endpoint = process.env.ENDPOINT || 'wss://ipns.namesys.xyz' // Websocket endpoint of namesys-w3name API
   const url = new URL('name/*/watch', endpoint)
 
   while (true) {
